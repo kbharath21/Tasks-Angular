@@ -1,0 +1,36 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "age": 22,
+      "course": "Computer Science",
+      "examDate": "2025-04-10"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "age": 21,
+      "course": "Mathematics",
+      "examDate": "2025-05-15"
+    },
+    {
+      "id": "1f8a",
+      "name": "Bharath",
+      "age": "20",
+      "course": "CSE"
+    },
+    {
+      "id": "82b8",
+      "name": "dhchh",
+      "age": "sd",
+      "course": "adfsdg"
+    },
+    {
+      "id": "f895",
+      "name": "sss",
+      "age": 25,
+      "course": "ssss"
+    }
+  ]
+}

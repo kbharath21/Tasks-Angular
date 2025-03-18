@@ -1,0 +1,18 @@
+<h4>Student Details</h4>
+
+<div *ngIf="student; else noStudent">
+    <p>
+        <strong>Name:</strong> {{ student.name }}
+    </p>
+    <p>
+        <strong>Age:</strong> {{ student.age }}
+    </p>
+    <p>
+        <strong>Course:</strong> {{ student.course }}
+    </p>
+</div>
+
+<!-- Fallback Message -->
+<ng-template #noStudent>
+    <p>No student data available.</p>
+</ng-template>

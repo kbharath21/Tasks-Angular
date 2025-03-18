@@ -1,0 +1,36 @@
+<h5>
+    Edit Student
+</h5>
+
+<button mat-flat-button [routerLink]="'/'">Back to the list</button>
+
+<div class="mat-elevation-z2 p-2">
+    <form [formGroup]="form" (submit)="onSubmit()">
+        
+        <!-- Name Field -->
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Enter the name</mat-label>
+            <input matInput placeholder="John Doe" formControlName="name">
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+        
+        <!-- Age Field -->
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Enter the age</mat-label>
+            <input matInput type="number" placeholder="24" formControlName="age">
+            <mat-icon matSuffix>calendar_today</mat-icon>
+        </mat-form-field>
+        
+        <!-- Course Field -->
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Enter course</mat-label>
+            <input matInput placeholder="Computer Science" formControlName="course">
+            <mat-icon matSuffix>school</mat-icon>
+        </mat-form-field>
+
+        <!-- Buttons -->
+        <button mat-flat-button color="primary" type="submit">Update</button>
+        <button mat-flat-button color="warn" type="reset">Cancel</button>
+
+    </form>
+</div>

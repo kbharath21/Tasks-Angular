@@ -1,0 +1,21 @@
+<h3>
+    List of Students
+</h3>
+<button mat-flat-button [routerLink]="'/create'">Create new Student</button>
+
+<div *ngFor="let student of students" class="mat-elevation-z2 p-2 my-2 d-flex align-items-center justify-content-between">
+    <div>
+        {{ student.name }}
+    </div>
+    <div>
+        <button mat-icon-button [routerLink]="['/edit', student.id]">
+            <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button [routerLink]="['/details', student.id]">
+            <mat-icon>visibility</mat-icon>
+        </button>
+        <button mat-icon-button color="warn" (click)="onDeleteClick(student.id)">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </div>
+</div>

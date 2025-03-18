@@ -1,0 +1,38 @@
+<h5>
+    Create Student
+</h5>
+
+<!-- Button to navigate back to the student list -->
+<button mat-flat-button color="primary" [routerLink]="'/'">Back to the list</button>
+
+<div class="mat-elevation-z2 p-3 mt-3">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        
+        <!-- Name Input Field -->
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Student Name</mat-label>
+            <input matInput placeholder="John Doe" formControlName="name">
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+
+        <!-- Age Input Field -->
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Age</mat-label>
+            <input matInput type="number" placeholder="24" formControlName="age">
+            <mat-icon matSuffix>calendar_today</mat-icon> <!-- Changed icon to a relevant one -->
+        </mat-form-field>
+
+        <!-- Course Input Field -->
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Course Name</mat-label>
+            <input matInput placeholder="Computer Science" formControlName="course">
+            <mat-icon matSuffix>school</mat-icon> <!-- Updated icon for clarity -->
+        </mat-form-field>
+
+        <!-- Action Buttons -->
+        <div class="d-flex justify-content-between mt-3">
+            <button mat-flat-button color="accent" type="submit">Create</button>
+            <button mat-flat-button color="warn" type="reset">Cancel</button>
+        </div>
+    </form>
+</div>
