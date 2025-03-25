@@ -1,6 +1,0 @@
-{
-    "students": [],
-    "users": [
-      { "id": 1, "username": "admin", "password": "password123" }
-    ]
-  }
