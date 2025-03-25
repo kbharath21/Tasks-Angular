@@ -20,33 +20,31 @@ import { NgIf } from '@angular/common';
     MatCardModule,
     NgIf
   ],
-  templateUrl: './product-form.component.html',
-  styleUrls: ['./product-form.component.scss']
+  templateUrl: './product-form.component.html'
 })
 export class ProductFormComponent implements OnInit {
   product: Product = {
+    id: '', // Changed to string
     name: '',
     description: '',
     price: 0,
     brand: '',
     type: '',
-    imageUrl: '',
-    id: 0
+    imageUrl: ''
   };
   isEditMode = false;
 
-  // Change from private to public
-constructor(
-  private productService: ProductService,
-  private route: ActivatedRoute,
-  public router: Router
-) {}
+  constructor(
+    private productService: ProductService,
+    private route: ActivatedRoute,
+    public router: Router
+  ) {}
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
       this.isEditMode = true;
-      this.productService.getProduct(+id).subscribe(product => {
+      this.productService.getProduct(id).subscribe(product => {
         this.product = product;
       });
     }
@@ -54,13 +52,21 @@ constructor(
 
   onSubmit() {
     if (this.isEditMode) {
-      this.productService.updateProduct(this.product.id!, this.product).subscribe(() => {
+      this.productService.updateProduct(this.product.id, this.product).subscribe(() => {
         this.router.navigate(['/products', this.product.id]);
       });
     } else {
+      // Generate a random string ID for new products
+      this.product.id = this.generateRandomStringId();
       this.productService.addProduct(this.product).subscribe(product => {
         this.router.navigate(['/products', product.id]);
       });
     }
+  }
+
+  // Method to generate a random string ID
+  private generateRandomStringId(): string {
+    // Generate a random string ID (you can customize this as needed)
+    return 'prod_' + Math.random().toString(36).substring(2, 9);
   }
 }

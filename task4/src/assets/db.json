@@ -1,107 +1,126 @@
-
-
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Running Shoes",
-        "description": "Lightweight running shoes with cushioned soles",
-        "price": 8999,
-        "brand": "Nike",
-        "type": "shoes",
-        "imageUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTL4uwawKL9f-SEKl4Nwo6ndvDygGo8_fZLoe6oDNqM8Y_KxEKVQaf8-dxS7w3iGnMyaGjVwmJ2ejfuZDWz1qPmVhFekvHPBZi4OCP0_QTd6nT4kAJPmj8lkA"
-      },
-      {
-        "id": 2,
-        "name": "Basketball Sneakers",
-        "description": "High-top sneakers for optimal ankle support",
-        "price": 11999,
-        "brand": "Adidas",
-        "type": "shoes",
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSYRe5zTiWjwnPCLpeMFkFpqwzsUwJDpN2KRJjUfs7wbCJStbd1wrCdNPBVcNpiG5z7UNFEfn55IJz4Gu_KT0dLn4I1ww5StZXKGg_aZsPokkmXHJ9W76115g"
-      },
-      {
-        "id": 3,
-        "name": "Casual Loafers",
-        "description": "Comfortable leather loafers for everyday wear",
-        "price": 5999,
-        "brand": "Clarks",
-        "type": "shoes",
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT8DzX1p4qJPWqFB78uUtKIb_ne_LmMzcbjIQwqABBvZV26AD1qHv27J9bOhV4by1hUsu-Aojy6kXwbZ5nM81Rdy2myy7nMPuE-d0uNEU76gc41sJUzg1NfBfo"
-      },
-      {
-        "id": 4,
-        "name": "Hiking Boots",
-        "description": "Waterproof boots for outdoor adventures",
-        "price": 12999,
-        "brand": "Merrell",
-        "type": "shoes",
-        "imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ4p4wVDl9-w6fvc8xBnlPxRYEP8aBMcOxjE23rNr0QBjLKC1nRjKaMtzTUqoV85ok3suYzDvpjiVol8B4pf-ylj397iHS8gkr-8O3Ws04"
-      },
-      {
-        "id": 5,
-        "name": "Cotton T-Shirt",
-        "description": "Soft 100% cotton t-shirt in various colors",
-        "price": 1999,
-        "brand": "H&M",
-        "type": "clothes",
-        "imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT3xQBdMHK4xD1mh5ptdbaM6Br2CG10CDfVUeFzJgbVhR5eFyW2oLErw9bJJDzKE2H_B35-VnsQJT9xtxaU2ycSg7cghd0UdxyC6S_qC4c"
-      },
-      {
-        "id": 6,
-        "name": "Denim Jeans",
-        "description": "Classic straight-fit jeans with stretch",
-        "price": 4999,
-        "brand": "Levi's",
-        "type": "clothes",
-        "imageUrl": "https://spykar.com/cdn/shop/files/1_d8c08f8f-0ba4-4d35-a6af-de6726969935.jpg?v=1728297189"
-      },
-      {
-        "id": 7,
-        "name": "Winter Jacket",
-        "description": "Insulated jacket for cold weather",
-        "price": 9999,
-        "brand": "The North Face",
-        "type": "clothes",
-        "imageUrl": "https://static.10kya.com/media/catalog/product/cache/1/image/1080x/b05d625d6b6a602168d46abb7a406194/w/i/winter-thick-jackets-coats-khakhi-1-winter-stylish-clothing-online-india-1100x1100_1.jpg"
-      },
-      {
-        "id": 8,
-        "name": "Formal Shirt",
-        "description": "Slim-fit dress shirt for business occasions",
-        "price": 3999,
-        "brand": "Calvin Klein",
-        "type": "clothes",
-        "imageUrl": "https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010598185-Grey-Grey-1000010598185-10282021_01-1200.jpg"
-      },
-      {
-        "id": 9,
-        "name": "Cordless Drill",
-        "description": "18V lithium-ion cordless drill with 2 batteries",
-        "price": 8999,
-        "brand": "DeWalt",
-        "type": "tools",
-        "imageUrl": "https://etoolstore.in/cdn/shop/files/71kNFCPW8eL._SX522.jpg?v=1720072733&width=1445"
-      },
-      {
-        "id": 10,
-        "name": "Tool Set",
-        "description": "125-piece home tool kit with case",
-        "price": 6999,
-        "brand": "Stanley",
-        "type": "tools",
-        "imageUrl": "https://www.soldermall.com/uploads/product/pic/zoom/46-in-1-pcs-tool-kit--screwdriver-and-socket-set-multi-purpose-combination-tool--2310.png"
-      }
-    ],
-  
-  
-    "users": [
-      {
-        "id": 1,
-        "email": "kbk@example.com",
-        "password": "password123",
-        "name": "kbk"
-      }
-    ]
-  }
-  
+  "products": [
+    {
+      "id": "1",
+      "name": "Running Shoes",
+      "description": "Lightweight running shoes with cushioned soles",
+      "price": 8999,
+      "brand": "Nike",
+      "type": "shoes",
+      "imageUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTL4uwawKL9f-SEKl4Nwo6ndvDygGo8_fZLoe6oDNqM8Y_KxEKVQaf8-dxS7w3iGnMyaGjVwmJ2ejfuZDWz1qPmVhFekvHPBZi4OCP0_QTd6nT4kAJPmj8lkA"
+    },
+    {
+      "id": "2",
+      "name": "Basketball Sneakers",
+      "description": "High-top sneakers for optimal ankle support",
+      "price": 11999,
+      "brand": "Adidas",
+      "type": "shoes",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSYRe5zTiWjwnPCLpeMFkFpqwzsUwJDpN2KRJjUfs7wbCJStbd1wrCdNPBVcNpiG5z7UNFEfn55IJz4Gu_KT0dLn4I1ww5StZXKGg_aZsPokkmXHJ9W76115g"
+    },
+    {
+      "id": "3",
+      "name": "Casual Loafers",
+      "description": "Comfortable leather loafers for everyday wear",
+      "price": 5999,
+      "brand": "Clarks",
+      "type": "shoes",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT8DzX1p4qJPWqFB78uUtKIb_ne_LmMzcbjIQwqABBvZV26AD1qHv27J9bOhV4by1hUsu-Aojy6kXwbZ5nM81Rdy2myy7nMPuE-d0uNEU76gc41sJUzg1NfBfo"
+    },
+    {
+      "id": "4",
+      "name": "Hiking Boots",
+      "description": "Waterproof boots for outdoor adventures",
+      "price": 12999,
+      "brand": "Merrell",
+      "type": "shoes",
+      "imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ4p4wVDl9-w6fvc8xBnlPxRYEP8aBMcOxjE23rNr0QBjLKC1nRjKaMtzTUqoV85ok3suYzDvpjiVol8B4pf-ylj397iHS8gkr-8O3Ws04"
+    },
+    {
+      "id": "5",
+      "name": "Cotton T-Shirt",
+      "description": "Soft 100% cotton t-shirt in various colors",
+      "price": 1999,
+      "brand": "H&M",
+      "type": "clothes",
+      "imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT3xQBdMHK4xD1mh5ptdbaM6Br2CG10CDfVUeFzJgbVhR5eFyW2oLErw9bJJDzKE2H_B35-VnsQJT9xtxaU2ycSg7cghd0UdxyC6S_qC4c"
+    },
+    {
+      "id": "6",
+      "name": "Denim Jeans",
+      "description": "Classic straight-fit jeans with stretch",
+      "price": 4999,
+      "brand": "Levi's",
+      "type": "clothes",
+      "imageUrl": "https://spykar.com/cdn/shop/files/1_d8c08f8f-0ba4-4d35-a6af-de6726969935.jpg?v=1728297189"
+    },
+    {
+      "id": "7",
+      "name": "Winter Jacket",
+      "description": "Insulated jacket for cold weather",
+      "price": 9999,
+      "brand": "The North Face",
+      "type": "clothes",
+      "imageUrl": "https://static.10kya.com/media/catalog/product/cache/1/image/1080x/b05d625d6b6a602168d46abb7a406194/w/i/winter-thick-jackets-coats-khakhi-1-winter-stylish-clothing-online-india-1100x1100_1.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Formal Shirt",
+      "description": "Slim-fit dress shirt for business occasions",
+      "price": 3999,
+      "brand": "Calvin Klein",
+      "type": "clothes",
+      "imageUrl": "https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010598185-Grey-Grey-1000010598185-10282021_01-1200.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Cordless Drill",
+      "description": "18V lithium-ion cordless drill with 2 batteries",
+      "price": 8999,
+      "brand": "DeWalt",
+      "type": "tools",
+      "imageUrl": "https://etoolstore.in/cdn/shop/files/71kNFCPW8eL._SX522.jpg?v=1720072733&width=1445"
+    },
+    {
+      "id": "10",
+      "name": "Tool Set",
+      "description": "125-piece home tool kit with case",
+      "price": 6999,
+      "brand": "Stanley",
+      "type": "tools",
+      "imageUrl": "https://www.soldermall.com/uploads/product/pic/zoom/46-in-1-pcs-tool-kit--screwdriver-and-socket-set-multi-purpose-combination-tool--2310.png"
+    },
+    {
+      "id": "89",
+      "name": "Adidas",
+      "description": "Shoes",
+      "price": 900,
+      "brand": "Adidas",
+      "type": "shoes",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYC7ub5NFWqYSJqbT89sRuHTYLz8uK9R92g&s"
+    },
+    {
+      "id": "prod_c9bh37f",
+      "name": "Golf cap",
+      "description": "Classy golf cap!",
+      "price": 50,
+      "brand": "US POLO",
+      "type": "clothes",
+      "imageUrl": "https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-1494539_alternate1?$rl_4x5_pdp$"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "kbk@example.com",
+      "password": "password123",
+      "name": "kbk"
+    },
+    {
+      "id": "dc6c",
+      "name": "Bharath Kumar Kanugula",
+      "email": "kbharath2104@gmail.com",
+      "password": "kanugula"
+    }
+  ]
+}

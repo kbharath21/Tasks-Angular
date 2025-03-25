@@ -1,0 +1,137 @@
+/* product-form.component.scss */
+@use '@angular/material' as mat;
+
+.commercial-form-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.product-form-card {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16) !important;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+
+  .form-header {
+    background-color: #000;
+    color: #ffd700;
+    padding: 1.5rem;
+    
+    .form-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    
+    .form-subtitle {
+      color: rgba(255, 215, 0, 0.8);
+      font-size: 0.9rem;
+    }
+  }
+
+  .product-form {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .commercial-field {
+    width: 100%;
+    
+    .mat-form-field-outline {
+      color: rgba(0, 0, 0, 0.2);
+    }
+    
+    .mat-form-field-outline-thick {
+      color: #ffd700;
+    }
+    
+    .mat-input-element {
+      color: #333;
+      font-weight: 500;
+    }
+    
+    .mat-form-field-label {
+      color: #666;
+    }
+  }
+
+  .half-width {
+    width: calc(50% - 0.75rem);
+  }
+
+  .form-row {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .image-preview {
+    margin-top: 1rem;
+    border: 2px dashed #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    
+    .preview-image {
+      max-width: 100%;
+      max-height: 200px;
+      border-radius: 4px;
+    }
+    
+    .preview-label {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: #666;
+      font-weight: 500;
+    }
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    
+    .cancel-btn {
+      background-color: #f5f5f5;
+      color: #333;
+      font-weight: 600;
+      padding: 0 1.5rem;
+      border: 1px solid #ddd;
+    }
+    
+    .submit-btn {
+      background-color: #ffd700;
+      color: #000;
+      font-weight: 600;
+      padding: 0 1.5rem;
+      
+      &:hover {
+        background-color: darken(#ffd700, 5%);
+      }
+    }
+  }
+}
+
+/* Add animation for form inputs */
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .half-width {
+    width: 100%;
+  }
+}

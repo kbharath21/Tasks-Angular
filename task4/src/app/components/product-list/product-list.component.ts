@@ -30,8 +30,7 @@ import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
     NgIf,
     MatIconModule
   ],
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.scss']
+  templateUrl: './product-list.component.html'
 })
 export class ProductListComponent implements OnInit {
   products: Product[] = [];

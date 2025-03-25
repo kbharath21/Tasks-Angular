@@ -18,8 +18,7 @@ import { RouterLink } from '@angular/router';
     CurrencyPipe,
     RouterLink
   ],
-  templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.scss']
+  templateUrl: './product-details.component.html'
 })
 export class ProductDetailsComponent implements OnInit {
   product: Product | null = null;
@@ -40,7 +39,7 @@ export class ProductDetailsComponent implements OnInit {
       console.log('Extracted ID from route:', id); // Debug log
 
       if (id) {
-        this.productService.getProduct(+id).subscribe({
+        this.productService.getProduct(id).subscribe({
           next: (product) => {
             console.log('Fetched Product:', product); // Debug log
             this.product = product;
@@ -59,7 +58,7 @@ export class ProductDetailsComponent implements OnInit {
     });
   }
 
-  deleteProduct(id: number) {
+  deleteProduct(id: string) {
     if (confirm('Are you sure you want to delete this product?')) {
       this.productService.deleteProduct(id).subscribe(() => {
         this.router.navigate(['/products']);
