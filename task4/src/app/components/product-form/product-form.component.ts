@@ -87,7 +87,7 @@ export class ProductFormComponent implements OnInit {
       });
     }
   }
-
+ 
   private generateRandomStringId(): string {
     return 'prod_' + Math.random().toString(36).substring(2, 9);
   }

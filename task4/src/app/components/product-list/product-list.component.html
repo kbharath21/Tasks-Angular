@@ -12,7 +12,7 @@
         <mat-option *ngFor="let brand of brands" [value]="brand">{{ brand }}</mat-option>
       </mat-select>
     </mat-form-field>
-  
+   
     <mat-form-field>
       <mat-label>Type</mat-label>
       <mat-select [(ngModel)]="selectedType" (selectionChange)="applyFilters()">

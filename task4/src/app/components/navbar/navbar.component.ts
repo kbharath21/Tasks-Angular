@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [MatToolbarModule, MatButtonModule, CommonModule, RouterLink],
   templateUrl: './navbar.component.html',
-})
+}) 
 export class NavbarComponent {
   constructor(public authService: AuthService, private router: Router) {}
 

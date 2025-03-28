@@ -7,4 +7,4 @@ export interface Product {
     type: string;
     description: string;
     imageUrl: string;
-  }
+  } 

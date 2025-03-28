@@ -55,7 +55,7 @@ export class ProductDetailsComponent implements OnInit {
         this.isLoading = false;
       }
     });
-  }
+  } 
 
   deleteProduct(id: string) {
     if (confirm('Are you sure you want to delete this product?')) {

@@ -14,11 +14,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
 @Component({
   selector: 'app-product-list',
-  standalone: true,
-  imports: [
+  standalone: true, 
+  imports: [ 
     TruncatePipe,
     MatCardModule,
-    MatButtonModule,
+    MatButtonModule, 
     RouterLink,
     MatFormFieldModule,
     MatInputModule,
