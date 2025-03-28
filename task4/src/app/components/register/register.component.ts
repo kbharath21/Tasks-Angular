@@ -1,50 +1,65 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
-import { NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-register',
   standalone: true,
   imports: [
-    FormsModule,
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    NgIf
+    CommonModule
   ],
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  styleUrls: ['./register.component.scss'] // Ensure this file exists
 })
 export class RegisterComponent {
-  user = {
-    name: '',
-    email: '',
-    password: ''
-  };
+  registerForm: FormGroup;
   error = '';
   success = false;
+  isLoading = false;
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(
+    private fb: FormBuilder,
+    private authService: AuthService,
+    private router: Router
+  ) {
+    this.registerForm = this.fb.group({
+      name: ['', [Validators.required, Validators.minLength(3)]],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(6)]]
+    });
+  }
 
   register() {
-    this.authService.register(this.user)
-      .subscribe({
-        next: () => {
-          this.success = true;
-          setTimeout(() => {
-            this.router.navigate(['/login']);
-          }, 2000);
-        },
-        error: () => {
-          this.error = 'Registration failed. Please try again.';
-        }
-      });
+    if (this.registerForm.invalid) {
+      this.registerForm.markAllAsTouched();
+      return;
+    }
+
+    this.isLoading = true;
+    this.error = '';
+
+    this.authService.register(this.registerForm.value).subscribe({
+      next: () => {
+        this.success = true;
+        this.isLoading = false;
+
+          this.router.navigate(['/login']);
+      },
+      error: (err) => {
+        this.isLoading = false;
+        this.error = err?.error?.message || 'Registration failed. Please try again.';
+      }
+    });
   }
 }

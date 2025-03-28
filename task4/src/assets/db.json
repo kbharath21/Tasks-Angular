@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Running Shoes",
       "description": "Lightweight running shoes with cushioned soles",
-      "price": 8999,
+      "price": 4999,
       "brand": "Nike",
       "type": "shoes",
       "imageUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTL4uwawKL9f-SEKl4Nwo6ndvDygGo8_fZLoe6oDNqM8Y_KxEKVQaf8-dxS7w3iGnMyaGjVwmJ2ejfuZDWz1qPmVhFekvHPBZi4OCP0_QTd6nT4kAJPmj8lkA"
@@ -13,7 +13,7 @@
       "id": "2",
       "name": "Basketball Sneakers",
       "description": "High-top sneakers for optimal ankle support",
-      "price": 11999,
+      "price": 1199,
       "brand": "Adidas",
       "type": "shoes",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSYRe5zTiWjwnPCLpeMFkFpqwzsUwJDpN2KRJjUfs7wbCJStbd1wrCdNPBVcNpiG5z7UNFEfn55IJz4Gu_KT0dLn4I1ww5StZXKGg_aZsPokkmXHJ9W76115g"
@@ -22,7 +22,7 @@
       "id": "3",
       "name": "Casual Loafers",
       "description": "Comfortable leather loafers for everyday wear",
-      "price": 5999,
+      "price": 199,
       "brand": "Clarks",
       "type": "shoes",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT8DzX1p4qJPWqFB78uUtKIb_ne_LmMzcbjIQwqABBvZV26AD1qHv27J9bOhV4by1hUsu-Aojy6kXwbZ5nM81Rdy2myy7nMPuE-d0uNEU76gc41sJUzg1NfBfo"
@@ -31,7 +31,7 @@
       "id": "4",
       "name": "Hiking Boots",
       "description": "Waterproof boots for outdoor adventures",
-      "price": 12999,
+      "price": 1299,
       "brand": "Merrell",
       "type": "shoes",
       "imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ4p4wVDl9-w6fvc8xBnlPxRYEP8aBMcOxjE23rNr0QBjLKC1nRjKaMtzTUqoV85ok3suYzDvpjiVol8B4pf-ylj397iHS8gkr-8O3Ws04"
@@ -40,7 +40,7 @@
       "id": "5",
       "name": "Cotton T-Shirt",
       "description": "Soft 100% cotton t-shirt in various colors",
-      "price": 1999,
+      "price": 52.5,
       "brand": "H&M",
       "type": "clothes",
       "imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT3xQBdMHK4xD1mh5ptdbaM6Br2CG10CDfVUeFzJgbVhR5eFyW2oLErw9bJJDzKE2H_B35-VnsQJT9xtxaU2ycSg7cghd0UdxyC6S_qC4c"
@@ -49,7 +49,7 @@
       "id": "6",
       "name": "Denim Jeans",
       "description": "Classic straight-fit jeans with stretch",
-      "price": 4999,
+      "price": 499,
       "brand": "Levi's",
       "type": "clothes",
       "imageUrl": "https://spykar.com/cdn/shop/files/1_d8c08f8f-0ba4-4d35-a6af-de6726969935.jpg?v=1728297189"
@@ -58,7 +58,7 @@
       "id": "7",
       "name": "Winter Jacket",
       "description": "Insulated jacket for cold weather",
-      "price": 9999,
+      "price": 99,
       "brand": "The North Face",
       "type": "clothes",
       "imageUrl": "https://static.10kya.com/media/catalog/product/cache/1/image/1080x/b05d625d6b6a602168d46abb7a406194/w/i/winter-thick-jackets-coats-khakhi-1-winter-stylish-clothing-online-india-1100x1100_1.jpg"
@@ -67,7 +67,7 @@
       "id": "8",
       "name": "Formal Shirt",
       "description": "Slim-fit dress shirt for business occasions",
-      "price": 3999,
+      "price": 399,
       "brand": "Calvin Klein",
       "type": "clothes",
       "imageUrl": "https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010598185-Grey-Grey-1000010598185-10282021_01-1200.jpg"
@@ -85,14 +85,14 @@
       "id": "10",
       "name": "Tool Set",
       "description": "125-piece home tool kit with case",
-      "price": 6999,
+      "price": 699,
       "brand": "Stanley",
       "type": "tools",
       "imageUrl": "https://www.soldermall.com/uploads/product/pic/zoom/46-in-1-pcs-tool-kit--screwdriver-and-socket-set-multi-purpose-combination-tool--2310.png"
     },
     {
       "id": "89",
-      "name": "Adidas",
+      "name": "Adidas Ultraboost",
       "description": "Shoes",
       "price": 900,
       "brand": "Adidas",
@@ -107,6 +107,24 @@
       "brand": "US POLO",
       "type": "clothes",
       "imageUrl": "https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-1494539_alternate1?$rl_4x5_pdp$"
+    },
+    {
+      "id": "prod_vwsk1ru",
+      "name": "Logitech K-120",
+      "description": "Sleek and Efficient Keyboard",
+      "price": 29,
+      "brand": "Logitech",
+      "type": "Electronics",
+      "imageUrl": "https://i5.walmartimages.com/asr/38b2245f-62b4-4116-a5ed-22a4530f160f.5d8e9f6b02424fa51b092e8fc319c998.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+      "id": "prod_3y98pd2",
+      "name": "FC BARCELONA AWAY KIT 24-25!!",
+      "description": "FC BARCELONA AWAY KIT  Beautiful black!!!",
+      "price": 49.99,
+      "brand": "Nike",
+      "type": "clothes",
+      "imageUrl": "https://footballmonk.in/wp-content/uploads/2024/09/Barcelona-Away-24-25-kit-1-1.jpg"
     }
   ],
   "users": [
@@ -119,6 +137,54 @@
     {
       "id": "dc6c",
       "name": "Bharath Kumar Kanugula",
+      "email": "kbharath2104@gmail.com",
+      "password": "kanugula"
+    },
+    {
+      "id": "9f6e",
+      "name": "bhatath",
+      "email": "sssd@gmail.com",
+      "password": "ssse32323"
+    },
+    {
+      "id": "a457",
+      "name": "kbk",
+      "email": "kbharath@gmail.com",
+      "password": "99393929293"
+    },
+    {
+      "id": "f4d0",
+      "name": "wdw",
+      "email": "kbharath@gmail.com",
+      "password": "99393929293"
+    },
+    {
+      "id": "8c0f",
+      "name": "ddss",
+      "email": "kbharah2104@gmail.com",
+      "password": "kanugula1"
+    },
+    {
+      "id": "98ab",
+      "name": "fdd",
+      "email": "kbharath2104@gmail.com",
+      "password": "kanugula"
+    },
+    {
+      "id": "e3ca",
+      "name": "fdd",
+      "email": "kbharath2104@gmail.com",
+      "password": "kanugula"
+    },
+    {
+      "id": "20a0",
+      "name": "sssss",
+      "email": "kbharath2104@gmail.com",
+      "password": "kanugula"
+    },
+    {
+      "id": "7fb7",
+      "name": "sDAD",
       "email": "kbharath2104@gmail.com",
       "password": "kanugula"
     }

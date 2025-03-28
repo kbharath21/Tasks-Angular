@@ -1,0 +1,29 @@
+.register-card {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  
+  .error-message {
+    color: #f44336; /* Material red */
+    margin: 1rem 0;
+  }
+  
+  .success-message {
+    color: #4caf50; /* Material green */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }

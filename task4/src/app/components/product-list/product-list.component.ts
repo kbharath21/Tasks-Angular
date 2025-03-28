@@ -9,7 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
-import { NgFor, NgIf, CurrencyPipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
 @Component({
@@ -17,7 +17,6 @@ import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
   standalone: true,
   imports: [
     TruncatePipe,
-    CurrencyPipe,
     MatCardModule,
     MatButtonModule,
     RouterLink,
@@ -26,8 +25,7 @@ import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
     FormsModule,
     MatSelectModule,
     MatSliderModule,
-    NgFor,
-    NgIf,
+    CommonModule,
     MatIconModule
   ],
   templateUrl: './product-list.component.html'

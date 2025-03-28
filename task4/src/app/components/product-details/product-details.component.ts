@@ -4,7 +4,7 @@ import { ProductService } from '../../services/product.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { CurrencyPipe, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { AuthService } from '../../services/auth.service';
 import { RouterLink } from '@angular/router';
 
@@ -14,9 +14,8 @@ import { RouterLink } from '@angular/router';
   imports: [
     MatCardModule, 
     MatButtonModule, 
-    NgIf,
-    CurrencyPipe,
-    RouterLink
+    RouterLink,
+    CommonModule
   ],
   templateUrl: './product-details.component.html'
 })
